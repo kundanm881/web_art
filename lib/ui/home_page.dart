@@ -9,6 +9,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // SystemChrome.setSystemUIOverlayStyle(
+    //     SystemUiOverlayStyle(statusBarColor: Colors.black26));
     return Scaffold(
       appBar: AppBar(
         backgroundColor: buttonTextColor,
@@ -46,7 +48,7 @@ class HomePage extends StatelessWidget {
                   ),
                   onTap: () {
                     ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(content: Text("You Click Game ${index}")));
+                        SnackBar(content: Text("You Click Game $index")));
                   },
                 ),
               );

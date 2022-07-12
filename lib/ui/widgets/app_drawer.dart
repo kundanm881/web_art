@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:web_art/ui/profile_page.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({
@@ -35,6 +36,7 @@ class AppDrawer extends StatelessWidget {
                   title: Text("Profile"),
                   onTap: () {
                     Get.back();
+                    Get.to(() => ProfilePage());
                   },
                 ),
                 //wallet
