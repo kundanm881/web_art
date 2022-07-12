@@ -62,7 +62,9 @@ class MainScreen extends StatelessWidget {
           child: SizedBox(
             width: 259,
             child: ElevatedButton(
-                onPressed: () => Get.to(() => const HomePage()),
+                onPressed: () {
+                  Get.offAll(() => const HomePage());
+                },
                 style: ButtonStyle(
                   // minimumSize: MaterialStateProperty.all(const Size(160, 36)),
                   backgroundColor: MaterialStateProperty.all(Colors.blue),
